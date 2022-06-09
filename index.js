@@ -22,6 +22,7 @@ app.use('/user', userRoutes);
 //db connection
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
+// Database Connect
 const client = new MongoClient(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -29,7 +30,6 @@ const client = new MongoClient(process.env.MONGODB_URI, {
 });
 client.connect((err) => {
   const collection = client.db('test').collection('devices');
-  // perform actions on the collection object
   client.close();
 });
 
