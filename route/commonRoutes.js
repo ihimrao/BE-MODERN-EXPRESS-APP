@@ -4,6 +4,7 @@ module.exports = (function () {
   var commonRoutes = require('express').Router();
 
   commonRoutes.get('/', root);
+  commonRoutes.get('/', globalState);
 
   return commonRoutes;
 })();
