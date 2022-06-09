@@ -1,6 +1,7 @@
 // run `node index.js` in the terminal
 const express = require('express');
 const bodyParser = require('body-parser');
+
 require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,6 +18,20 @@ app.use('/common', commonRoutes);
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/user', userRoutes);
+
+//db connection
+const { MongoClient, ServerApiVersion } = require('mongodb');
+
+const client = new MongoClient(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+});
+client.connect((err) => {
+  const collection = client.db('test').collection('devices');
+  // perform actions on the collection object
+  client.close();
+});
 
 app.listen(PORT, () => {
   console.log('Express IMsarkar Running ', PORT);
