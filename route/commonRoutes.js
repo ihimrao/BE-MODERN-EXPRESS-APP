@@ -1,6 +1,10 @@
-module.exports = function (app) {
-  app.get('/r1', function (req, res) {
-    console.log('got the get!');
-    res.end();
+module.exports = (function () {
+  'use strict';
+  var commonRoutes = require('express').Router();
+
+  commonRoutes.get('/', function (req, res) {
+    res.send('Hello CommonRoutes!');
   });
-};
+
+  return commonRoutes;
+})();
