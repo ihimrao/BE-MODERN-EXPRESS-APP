@@ -25,13 +25,13 @@ A brief description of what this project does and who it's for
 Clone the project
 
 ```bash
-  git clone https://github.com/imsarkar/Flicks-bee-server.git
+  git clone https://github.com/imsarkar/BE-MODERN-EXPRESS-APP.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Flicks-bee-server
+  cd BE-MODERN-EXPRESS-APP
 ```
 
 Install dependencies
@@ -57,8 +57,6 @@ To run tests, run the following command
 
 
 ## Tech Stack
-
-**Client:** React, Redux, Mui
 
 **Server:** Node, Express
 
