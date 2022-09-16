@@ -15,6 +15,75 @@
   </a>
 
   <h3 align="center">Shoolin BE</h3>
+# Flicks Bee
+
+A brief description of what this project does and who it's for
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/imsarkar/Flicks-bee-server.git
+```
+
+Go to the project directory
+
+```bash
+  cd Flicks-bee-server
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+
+## Tech Stack
+
+**Client:** React, Redux, Mui
+
+**Server:** Node, Express
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`PORT`
+`MONGO_URL`
+`LOGGER_API`
+`FALLBACK_SERVER`
+`JWT_SECRET`
+`NODE_ENV`
+
+
+## Authors
+
+- [imsarkar](https://www.github.com/imsarkar)
+
+
+## Support
+
+For support, email himanshu.11814417@lpu.in
+
 
   <p align="center">
     Express Backend Setup By IMsarkar 
