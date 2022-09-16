@@ -15,7 +15,6 @@
   </a>
 
   <h3 align="center">Shoolin BE</h3>
-# Flicks Bee
 
 A brief description of what this project does and who it's for
 
